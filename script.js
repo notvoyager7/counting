@@ -62,4 +62,5 @@ function inc(){
         localStorage.setItem("Value", Number(localStorage.getItem("Value")) + 1)
         highScore.innerHTML = hScoreLabel + localStorage.getItem("Value")
     }
+    btn.style.pointerEvents = "auto"
 }

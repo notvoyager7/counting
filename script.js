@@ -57,6 +57,12 @@ btn.addEventListener("click", inc)
 
 //Function performed when clicking
 function inc(){
+    body.style.touchAction = "none"
+    heading.style.touchAction = "none"
+    btn.style.touchAction = "none"
+    curNum.style.touchAction = "none"
+    highScore.style.touchAction = "none"
+
     //curVal is incremented and curNum updated
     curVal++
     curNum.innerHTML = curLabel + curVal

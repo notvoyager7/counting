@@ -53,6 +53,7 @@ btn.addEventListener("click", inc)
 
 //Function performed when clicking
 function inc(){
+    btn.style.pointerEvents = "none"
     //curVal is incremented and curNum updated
     curVal++
     curNum.innerHTML = curLabel + curVal

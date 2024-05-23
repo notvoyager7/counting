@@ -32,6 +32,7 @@ btn.style.width = "5rem"
 btn.style.margin = "0.5rem"
 btn.innerHTML = "CLICK"
 body.appendChild(btn)
+btn.style.touchAction = "none"
 
 //Creates text for the curNum
 const curNum = document.createElement("div")

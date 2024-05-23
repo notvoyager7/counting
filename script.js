@@ -17,7 +17,6 @@ body.style.width = "100vw"
 body.style.flexDirection = "column"
 body.style.justifyContent = "center"
 body.style.alignItems = "center"
-body.style.touchAction = "none"
 
 //Creates the heading
 const heading = document.createElement("h1")
@@ -25,7 +24,6 @@ heading.innerHTML = "Counting"
 heading.style.margin = "0.5rem"
 // heading.st
 body.appendChild(heading)
-heading.style.touchAction = "none"
 
 //Creates the button
 const btn = document.createElement("button")
@@ -34,7 +32,6 @@ btn.style.width = "5rem"
 btn.style.margin = "0.5rem"
 btn.innerHTML = "CLICK"
 body.appendChild(btn)
-btn.style.touchAction = "none"
 
 //Creates text for the curNum
 const curNum = document.createElement("div")
@@ -42,7 +39,6 @@ curNum.innerHTML = curLabel + curVal
 curNum.style.margin = "0.5rem"
 // curNum.style.height = "1rem"
 body.appendChild(curNum)
-curNum.style.touchAction = "none"
 
 //Creates text for the highScore
 const highScore = document.createElement("div")
@@ -50,19 +46,12 @@ highScore.innerHTML = hScoreLabel + localStorage.getItem("Value")
 curNum.style.margin = "0.5rem"
 // curNum.style.height = "1rem"
 body.appendChild(highScore)
-highScore.style.touchAction = "none"
 
 //EventListener for the button
 btn.addEventListener("click", inc)
 
 //Function performed when clicking
 function inc(){
-    body.style.touchAction = "none"
-    heading.style.touchAction = "none"
-    btn.style.touchAction = "none"
-    curNum.style.touchAction = "none"
-    highScore.style.touchAction = "none"
-
     //curVal is incremented and curNum updated
     curVal++
     curNum.innerHTML = curLabel + curVal

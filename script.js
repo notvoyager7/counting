@@ -17,6 +17,8 @@ body.style.width = "100vw"
 body.style.flexDirection = "column"
 body.style.justifyContent = "center"
 body.style.alignItems = "center"
+body.style.paddingTop = "0"
+body.style.marginTop = "0"
 
 //Creates the heading
 const heading = document.createElement("h1")

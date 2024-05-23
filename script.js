@@ -22,29 +22,33 @@ body.style.alignItems = "center"
 const heading = document.createElement("h1")
 heading.innerHTML = "Counting"
 heading.style.margin = "0.5rem"
+heading.style.fontSize = "5rem"
 // heading.st
 body.appendChild(heading)
-
-//Creates the button
-const btn = document.createElement("button")
-btn.style.height = "2rem"
-btn.style.width = "5rem"
-btn.style.margin = "0.5rem"
-btn.innerHTML = "CLICK"
-body.appendChild(btn)
-// btn.style.touchAction = "none"
 
 //Creates text for the curNum
 const curNum = document.createElement("div")
 curNum.innerHTML = curLabel + curVal
 curNum.style.margin = "0.5rem"
+curNum.style.fontSize = "2rem"
 // curNum.style.height = "1rem"
 body.appendChild(curNum)
+
+//Creates the button
+const btn = document.createElement("button")
+btn.style.height = "4rem"
+btn.style.width = "10rem"
+btn.style.margin = "0.5rem"
+btn.style.fontSize = "2rem"
+btn.innerHTML = "CLICK"
+body.appendChild(btn)
+// btn.style.touchAction = "none"
 
 //Creates text for the highScore
 const highScore = document.createElement("div")
 highScore.innerHTML = hScoreLabel + localStorage.getItem("Value")
 curNum.style.margin = "0.5rem"
+highScore.style.fontSize = "2rem"
 // curNum.style.height = "1rem"
 body.appendChild(highScore)
 

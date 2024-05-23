@@ -53,7 +53,7 @@ body.appendChild(highScore)
 highScore.style.touchAction = "none"
 
 //EventListener for the button
-btn.addEventListener("click", inc)
+// btn.addEventListener("click", inc)
 
 //Function performed when clicking
 function inc(){
